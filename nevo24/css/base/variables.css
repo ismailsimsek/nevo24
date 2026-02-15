@@ -1,18 +1,28 @@
 :root {
-  --primary-color: #0052cc;
-  --primary-dark: #003d99;
-  --accent-color: #ffab00;
-  --accent-hover: #ff9500;
-  --text-dark: #172b4d;
-  --text-light: #42526e;
-  --bg-color: #f4f5f7;
+  /* Executive Color Palette */
+  --primary-color: #0f172a;
+  /* Dark Navy */
+  --primary-light: #1e293b;
+  --accent-color: #3b82f6;
+  /* Modern Blue */
+  --accent-hover: #2563eb;
+  --success-color: #10b981;
+
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --bg-light: #f8fafc;
   --white: #ffffff;
-  --glass-bg: rgba(255, 255, 255, 0.95);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --radius-md: 8px;
-  --radius-lg: 12px;
+
+  /* Modern Depth & Radius */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
   --font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  --transition: all 0.3s ease;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

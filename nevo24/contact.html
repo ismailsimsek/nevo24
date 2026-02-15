@@ -7,136 +7,232 @@
     <title>Contact Us - Nevo24</title>
     <meta name="description"
         content="Get in touch with Nevo24 for personal consulting on your contracts. We are here to help.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
-    <header>
+<body class="bg-light">
+    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
         <div class="container">
-            <nav>
-                <a href="index.html" class="logo">Nevo24</a>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="knowledge.html">Knowledge</a>
-                    <a href="contact.html" class="active">Contact</a>
+            <a href="index.html" class="navbar-brand logo text-decoration-none">Nevo24</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav ms-auto gap-4 align-items-lg-center">
+                    <a href="index.html" class="nav-link fw-medium">Home</a>
+                    <a href="services.html" class="nav-link fw-medium">Services</a>
+                    <a href="knowledge.html" class="nav-link fw-medium">Knowledge</a>
+                    <a href="contact.html" class="nav-link active fw-medium">Contact</a>
+                    <a href="contact.html" class="btn btn-primary px-4 rounded-pill fw-bold ms-lg-2">Get Started</a>
                 </div>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="hero" style="padding: 3rem 0; min-height: 250px;">
-            <div class="container hero-content">
-                <h1>Contact Us</h1>
-                <p>We are here to help you personally. Reach out to us for any questions.</p>
+        <section class="hero py-5 bg-white border-bottom shadow-sm">
+            <div class="container py-5 text-center" data-aos="fade-down">
+                <h1 class="display-3 fw-bold mb-4 text-primary">Contact Us</h1>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">We are here to help you personally. Reach
+                    out to our team of experts for tailored advice on your contracts.</p>
             </div>
         </section>
 
-        <section class="section container">
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
-                <!-- Contact Info -->
-                <div>
-                    <h2 style="margin-bottom: 2rem;">Get in Touch</h2>
+        <section class="py-5 my-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Contact Info -->
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <h2 class="display-6 fw-bold mb-5">Get in Touch</h2>
 
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> Address
-                        </h4>
-                        <p>Nevo24 GmbH<br>Musterstraße 123<br>12345 Berlin, Germany</p>
+                        <div class="d-flex gap-4 mb-5">
+                            <div class="bg-primary bg-opacity-10 rounded-circle p-3 text-primary h-100 shadow-sm">
+                                <i class="fas fa-map-marker-alt fs-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-2">Office Address</h4>
+                                <p class="text-muted mb-0">Nevo24 GmbH<br>Musterstraße 123<br>12345 Berlin, Germany</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-4 mb-5">
+                            <div class="bg-primary bg-opacity-10 rounded-circle p-3 text-primary h-100 shadow-sm">
+                                <i class="fas fa-envelope fs-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-2">Email Us</h4>
+                                <p class="text-muted mb-0"><a href="mailto:support@nevo24.de"
+                                        class="text-decoration-none text-primary fw-medium">support@nevo24.de</a></p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-4 mb-5">
+                            <div class="bg-primary bg-opacity-10 rounded-circle p-3 text-primary h-100 shadow-sm">
+                                <i class="fas fa-phone fs-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-2">Call Us</h4>
+                                <p class="text-muted mb-2"><a href="tel:+491234567890"
+                                        class="text-decoration-none text-primary fw-medium">+49 123 456 7890</a></p>
+                                <p class="small text-muted mb-0">Mon-Fri: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 p-4 bg-light rounded-4 border">
+                            <h5 class="fw-bold mb-3">Professional Consulting</h5>
+                            <p class="small text-muted mb-0">Our advisors are certified experts in German energy and
+                                insurance markets. We guarantee neutral, independent advice.</p>
+                        </div>
                     </div>
 
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-envelope" style="color: var(--primary-color);"></i> Email
-                        </h4>
-                        <p><a href="mailto:support@nevo24.de" style="color: var(--primary-color);">support@nevo24.de</a>
-                        </p>
+                    <!-- Contact Form -->
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <div class="bg-white p-5 rounded-5 border shadow-lg">
+                            <form class="contact-form" action="#" method="POST">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" id="name" name="name" class="form-control" required
+                                                placeholder="Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" id="email" name="email" class="form-control" required
+                                                placeholder="Email">
+                                            <label for="email">Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="tel" id="phone" name="phone" class="form-control"
+                                                placeholder="Phone">
+                                            <label for="phone">Phone Number (Optional)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <select id="service" name="service" class="form-select">
+                                                <option value="general">General Inquiry</option>
+                                                <option value="electricity">Electricity</option>
+                                                <option value="gas">Gas</option>
+                                                <option value="insurance">Insurance</option>
+                                                <option value="dsl">DSL & Mobile</option>
+                                            </select>
+                                            <label for="service">Interested Service</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-4">
+                                            <textarea id="message" name="message" class="form-control"
+                                                style="height: 150px" required placeholder="Message"></textarea>
+                                            <label for="message">How can we help you?</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" id="callback"
+                                                name="callback">
+                                            <label class="form-check-label text-muted small" for="callback">
+                                                Request a personal callback from an expert advisor.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit"
+                                            class="btn btn-primary btn-lg w-100 rounded-pill fw-bold py-3 shadow-sm">Send
+                                            Secure Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-phone" style="color: var(--primary-color);"></i> Phone
-                        </h4>
-                        <p><a href="tel:+491234567890" style="color: var(--primary-color);">+49 123 456 7890</a></p>
-                        <p style="font-size: 0.9rem; color: #666;">Mon-Fri: 9:00 - 18:00</p>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div>
-                    <form class="contact-form" action="#" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required
-                                placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required
-                                placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Interested Service</label>
-                            <select id="service" name="service" class="form-control">
-                                <option value="general">General Inquiry</option>
-                                <option value="electricity">Electricity</option>
-                                <option value="gas">Gas</option>
-                                <option value="insurance">Insurance</option>
-                                <option value="dsl">DSL & Mobile</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" class="form-control" rows="5" required
-                                placeholder="How can we help you?"></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Send Message</button>
-                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h4>Nevo24</h4>
-                    <p>Your personal contract manager.</p>
+    <footer class="bg-white pt-5 mt-5 border-top shadow-sm">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4 text-primary">Nevo24</h4>
+                    <p class="text-muted mb-4" style="max-width: 300px;">Your professional contract managers. Personal
+                        consulting combined with high-tech automation.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-facebook-f p-1"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-linkedin-in p-1"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-instagram p-1"></i></a>
+                    </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#electricity">Electricity</a></li>
-                        <li><a href="services.html#gas">Gas</a></li>
-                        <li><a href="services.html#insurance">Insurance</a></li>
-                        <li><a href="services.html#dsl">DSL & Mobile</a></li>
+                <div class="col-md-4 col-lg-2 ms-lg-auto">
+                    <h5 class="fw-bold mb-4">Services</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="services.html#electricity"
+                                class="text-decoration-none text-muted transition hover-primary">Electricity</a></li>
+                        <li><a href="services.html#gas"
+                                class="text-decoration-none text-muted transition hover-primary">Gas</a></li>
+                        <li><a href="services.html#insurance"
+                                class="text-decoration-none text-muted transition hover-primary">Insurance</a></li>
+                        <li><a href="services.html#dsl"
+                                class="text-decoration-none text-muted transition hover-primary">DSL & Mobile</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">About Us</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-decoration-none text-muted transition hover-primary">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Careers</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="knowledge.html">Help Center</a></li>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="fw-bold mb-4">Support</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="knowledge.html"
+                                class="text-decoration-none text-muted transition hover-primary">Help Center</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Terms</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Imprint</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                &copy; 2026 Nevo24. All rights reserved.
             </div>
         </div>
+        <div class="bg-light py-4 text-center border-top small text-muted">
+            &copy; 2026 Nevo24. All rights reserved. Professional Energy & Insurance Management.
+        </div>
     </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
     <script src="js/main.js"></script>
     <script>
         // Pre-select service based on URL parameter

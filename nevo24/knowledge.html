@@ -7,128 +7,196 @@
     <title>Knowledge Center - Nevo24</title>
     <meta name="description"
         content="Learn how to save money on contracts. Expert guides on switching providers, understanding tariffs, and more.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
-    <header>
+<body class="bg-light">
+    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
         <div class="container">
-            <nav>
-                <a href="index.html" class="logo">Nevo24</a>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="knowledge.html" class="active">Knowledge</a>
-                    <a href="contact.html">Contact</a>
+            <a href="index.html" class="navbar-brand logo text-decoration-none">Nevo24</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav ms-auto gap-4 align-items-lg-center">
+                    <a href="index.html" class="nav-link fw-medium">Home</a>
+                    <a href="services.html" class="nav-link fw-medium">Services</a>
+                    <a href="knowledge.html" class="nav-link active fw-medium">Knowledge</a>
+                    <a href="contact.html" class="nav-link fw-medium">Contact</a>
+                    <a href="contact.html" class="btn btn-primary px-4 rounded-pill fw-bold ms-lg-2">Get Started</a>
                 </div>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="hero" style="padding: 3rem 0; min-height: 250px;">
-            <div class="container hero-content">
-                <h1>Knowledge Center</h1>
-                <p>Expert advice to help you make informed decisions.</p>
+        <section class="hero py-5 bg-white border-bottom shadow-sm">
+            <div class="container py-5 text-center" data-aos="fade-down">
+                <h1 class="display-3 fw-bold mb-4 text-primary">Knowledge Center</h1>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">Expert insights, practical guides, and the
+                    latest news to help you manage your household contracts like a pro.</p>
             </div>
         </section>
 
-        <section class="section container">
-            <div class="grid">
-                <article class="card">
-                    <div
-                        style="height: 150px; background-color: #e0e7ff; border-radius: 8px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-lightbulb" style="font-size: 3rem; color: var(--primary-color);"></i>
+        <section class="py-5 my-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <article class="card h-100 border shadow-sm rounded-4 overflow-hidden transition shadow-hover">
+                            <div class="bg-primary bg-opacity-10 p-5 text-center">
+                                <i class="fas fa-lightbulb display-4 text-primary"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-3">How to Switch Electricity</h4>
+                                <p class="text-muted small mb-4">Switching is easier than you think. Learn about the
+                                    process, notice periods, and how to avoid power cuts during the transition.</p>
+                                <a href="#" class="btn btn-link text-primary fw-bold text-decoration-none p-0">Read Full
+                                    Guide <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </article>
                     </div>
-                    <h3>How to Switch Electricity Providers</h3>
-                    <p>Switching is easier than you think. Learn about the process, notice periods, and how to avoid
-                        power cuts during the transition.</p>
-                    <a href="#" class="btn-cta" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Read Guide</a>
-                </article>
 
-                <article class="card">
-                    <div
-                        style="height: 150px; background-color: #fff3e0; border-radius: 8px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-file-contract" style="font-size: 3rem; color: #ff9800;"></i>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <article class="card h-100 border shadow-sm rounded-4 overflow-hidden transition shadow-hover">
+                            <div class="bg-warning bg-opacity-10 p-5 text-center">
+                                <i class="fas fa-file-contract display-4 text-warning"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-3">Understanding Gas Tariffs</h4>
+                                <p class="text-muted small mb-4">What is a basic supply tariff? What is a price
+                                    guarantee? We explain the most important terms in your gas contract.</p>
+                                <a href="#" class="btn btn-link text-primary fw-bold text-decoration-none p-0">Read Full
+                                    Guide <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </article>
                     </div>
-                    <h3>Understanding Gas Tariffs</h3>
-                    <p>What is a basic supply tariff? What is a price guarantee? We explain the most important terms in
-                        your gas contract.</p>
-                    <a href="#" class="btn-cta" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Read Guide</a>
-                </article>
 
-                <article class="card">
-                    <div
-                        style="height: 150px; background-color: #e8f5e9; border-radius: 8px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-umbrella" style="font-size: 3rem; color: #4caf50;"></i>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <article class="card h-100 border shadow-sm rounded-4 overflow-hidden transition shadow-hover">
+                            <div class="bg-success bg-opacity-10 p-5 text-center">
+                                <i class="fas fa-umbrella display-4 text-success"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-3">Family Insurance Checklist</h4>
+                                <p class="text-muted small mb-4">Which insurances are essential for families? A
+                                    comprehensive checklist to ensure you are adequately protected.</p>
+                                <a href="#" class="btn btn-link text-primary fw-bold text-decoration-none p-0">Read Full
+                                    Guide <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </article>
                     </div>
-                    <h3>Insurance Checklist for Families</h3>
-                    <p>Which insurances are essential for families? A comprehensive checklist to ensure you are
-                        adequately protected.</p>
-                    <a href="#" class="btn-cta" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Read Guide</a>
-                </article>
 
-                <article class="card">
-                    <div
-                        style="height: 150px; background-color: #e1f5fe; border-radius: 8px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-wifi" style="font-size: 3rem; color: #03a9f4;"></i>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <article class="card h-100 border shadow-sm rounded-4 overflow-hidden transition shadow-hover">
+                            <div class="bg-info bg-opacity-10 p-5 text-center">
+                                <i class="fas fa-wifi display-4 text-info"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-3">Optimizing Home Wi-Fi</h4>
+                                <p class="text-muted small mb-4">Slow internet? Before you upgrade your plan, try these
+                                    tips to improve your Wi-Fi signal strength at home.</p>
+                                <a href="#" class="btn btn-link text-primary fw-bold text-decoration-none p-0">Read Full
+                                    Guide <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </article>
                     </div>
-                    <h3>Optimizing Home Wi-Fi</h3>
-                    <p>Slow internet? Before you upgrade your plan, try these tips to improve your Wi-Fi signal strength
-                        at home.</p>
-                    <a href="#" class="btn-cta" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Read Guide</a>
-                </article>
+                </div>
             </div>
         </section>
 
-        <section class="section container"
-            style="background-color: var(--white); border-radius: 12px; padding: 3rem; text-align: center; box-shadow: var(--shadow-sm);">
-            <h2>Have a specific question?</h2>
-            <p style="margin-bottom: 2rem;">Our experts are here to help you personally.</p>
-            <a href="contact.html" class="btn-cta">Contact Support</a>
+        <section class="py-5 bg-white border-top border-bottom">
+            <div class="container py-5 text-center" data-aos="zoom-in">
+                <div class="p-5 bg-light rounded-5 shadow-sm border mx-auto" style="max-width: 800px;">
+                    <h2 class="display-6 fw-bold mb-3 text-primary">Have a specific question?</h2>
+                    <p class="text-muted lead mb-4">Our contract experts are available for personal consultation. No
+                        bots, just real help.</p>
+                    <a href="contact.html"
+                        class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow-sm">Contact Support</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h4>Nevo24</h4>
-                    <p>Your personal contract manager.</p>
+    <footer class="bg-white pt-5 mt-5 border-top shadow-sm">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4 text-primary">Nevo24</h4>
+                    <p class="text-muted mb-4" style="max-width: 300px;">Your professional contract managers. Personal
+                        consulting combined with high-tech automation.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-facebook-f p-1"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-linkedin-in p-1"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-instagram p-1"></i></a>
+                    </div>
                 </div>
-                <!-- ... Footer links same as other pages ... -->
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#electricity">Electricity</a></li>
-                        <li><a href="services.html#gas">Gas</a></li>
-                        <li><a href="services.html#insurance">Insurance</a></li>
-                        <li><a href="services.html#dsl">DSL & Mobile</a></li>
+                <div class="col-md-4 col-lg-2 ms-lg-auto">
+                    <h5 class="fw-bold mb-4">Services</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="services.html#electricity"
+                                class="text-decoration-none text-muted transition hover-primary">Electricity</a></li>
+                        <li><a href="services.html#gas"
+                                class="text-decoration-none text-muted transition hover-primary">Gas</a></li>
+                        <li><a href="services.html#insurance"
+                                class="text-decoration-none text-muted transition hover-primary">Insurance</a></li>
+                        <li><a href="services.html#dsl"
+                                class="text-decoration-none text-muted transition hover-primary">DSL & Mobile</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">About Us</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-decoration-none text-muted transition hover-primary">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Careers</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="knowledge.html">Help Center</a></li>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="fw-bold mb-4">Support</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="knowledge.html"
+                                class="text-decoration-none text-muted transition hover-primary">Help Center</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Terms</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Imprint</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                &copy; 2026 Nevo24. All rights reserved.
             </div>
         </div>
+        <div class="bg-light py-4 text-center border-top small text-muted">
+            &copy; 2026 Nevo24. All rights reserved. Professional Energy & Insurance Management.
+        </div>
     </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 
