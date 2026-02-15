@@ -1,0 +1,39 @@
+/* USP Section */
+.usp-bar {
+    background-color: var(--white);
+    padding: 1.5rem 0;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 2;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+}
+
+.usp-item {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.usp-icon {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .usp-bar {
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
