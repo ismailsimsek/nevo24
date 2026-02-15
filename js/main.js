@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
     // Contact Form Handling (Mailto)
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
@@ -50,13 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value || 'Not provided';
             const service = document.getElementById('service').value;
             const message = document.getElementById('message').value;
+            const callback = document.getElementById('callback').checked ? 'Yes' : 'No';
 
             // Construct mailto link
             const subject = `Nevo24 Inquiry: ${service} - ${name}`;
-            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AService: ${service}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-            const mailtoLink = `mailto:support@nevo24.de?subject=${encodeURIComponent(subject)}&body=${body}`; // Body encoded manually above for line breaks
+            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AService: ${service}%0D%0ACallback Requested: ${callback}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+            const mailtoLink = `mailto:support@nevo24.de?subject=${encodeURIComponent(subject)}&body=${body}`;
 
             submitBtn.textContent = 'Opening Email Client...';
             submitBtn.disabled = true;

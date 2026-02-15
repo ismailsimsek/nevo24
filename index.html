@@ -7,179 +7,397 @@
     <title>Nevo24 - Compare Contracts & Save | Electricity, Gas, Insurance</title>
     <meta name="description"
         content="Compare electricity, gas, insurance, and more with Nevo24. Get personal consulting support and find the best deals for your needs.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
-    <header>
+<body class="bg-light">
+    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
         <div class="container">
-            <nav>
-                <a href="index.html" class="logo">Nevo24</a>
-                <div class="nav-links">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="knowledge.html">Knowledge</a>
-                    <a href="contact.html">Contact</a>
+            <a href="index.html" class="navbar-brand logo text-decoration-none">Nevo24</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="navbar-nav ms-auto gap-4 align-items-lg-center">
+                    <a href="index.html" class="nav-link active fw-medium">Home</a>
+                    <a href="services.html" class="nav-link fw-medium">Services</a>
+                    <a href="knowledge.html" class="nav-link fw-medium">Knowledge</a>
+                    <a href="contact.html" class="nav-link fw-medium">Contact</a>
+                    <a href="contact.html" class="btn btn-primary px-4 rounded-pill fw-bold ms-lg-2">Get Started</a>
                 </div>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <h1>Save Money on Your Contracts with Personal Support</h1>
-                <p>Compare electricity, gas, insurance, and more. We provide individual consulting to ensure you get the
-                    best deal.</p>
-                <a href="services.html" class="btn-cta">Start Comparing Now</a>
+        <section class="hero py-5 min-vh-75 d-flex align-items-center bg-white">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-content" data-aos="fade-up">
+                        <h1 class="display-3 fw-bold mb-4 text-primary">Save Money on Your Contracts with Personal
+                            Support</h1>
+                        <p class="lead text-muted mb-5">Compare electricity, gas, insurance, and more. We provide
+                            individual consulting to ensure you get the best deal for your specific needs.</p>
+                        <div class="d-flex flex-wrap gap-3 align-items-center">
+                            <a href="services.html"
+                                class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow-sm">Start Comparing
+                                Now</a>
+                            <div
+                                class="badge rounded-pill bg-light text-dark p-3 border shadow-sm d-flex align-items-center gap-2">
+                                <i class="fab fa-apple opacity-50"></i> <i class="fab fa-android opacity-50"></i>
+                                <span class="fw-bold">App Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+                        <div class="position-relative">
+                            <div
+                                class="bg-primary rounded-4 shadow-lg p-5 text-white text-center transform-hover transition">
+                                <i class="fas fa-hand-holding-usd display-1 opacity-50 mb-3"></i>
+                                <h3 class="fw-bold">Max Savings</h3>
+                                <p class="mb-0">Average customer saves 500€ per year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- USP Bar -->
-        <div class="container">
-            <div class="usp-bar">
-                <div class="usp-item">
-                    <i class="fas fa-check-circle usp-icon"></i>
-                    <span>TÜV Certified Security</span>
+        <div class="container mt-n5 position-relative z-2">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-4 px-3 bg-white shadow-lg rounded-4 border mx-0"
+                data-aos="fade-up" data-aos-delay="400">
+                <div class="col d-flex align-items-center gap-3">
+                    <div class="bg-light text-primary rounded-circle p-3 shadow-inner">
+                        <i class="fas fa-check-circle fa-xl"></i>
+                    </div>
+                    <div>
+                        <div class="fw-bold text-dark">TÜV Security</div>
+                        <div class="small text-muted">Certified Protection</div>
+                    </div>
                 </div>
-                <div class="usp-item">
-                    <i class="fas fa-user-shield usp-icon"></i>
-                    <span>Personal Consulting</span>
+                <div class="col d-flex align-items-center gap-3">
+                    <div class="bg-light text-success rounded-circle p-3 shadow-inner">
+                        <i class="fas fa-user-shield fa-xl"></i>
+                    </div>
+                    <div>
+                        <div class="fw-bold text-dark">Personal Support</div>
+                        <div class="small text-muted">Direct Consulting</div>
+                    </div>
                 </div>
-                <div class="usp-item">
-                    <i class="fas fa-piggy-bank usp-icon"></i>
-                    <span>Save up to 500€/Year</span>
+                <div class="col d-flex align-items-center gap-3">
+                    <div class="bg-light text-warning rounded-circle p-3 shadow-inner">
+                        <i class="fas fa-piggy-bank fa-xl"></i>
+                    </div>
+                    <div>
+                        <div class="fw-bold text-dark">Save Money</div>
+                        <div class="small text-muted">Up to 500€/Year</div>
+                    </div>
                 </div>
-                <div class="usp-item">
-                    <i class="fas fa-stopwatch usp-icon"></i>
-                    <span>Switch in 5 Minutes</span>
+                <div class="col d-flex align-items-center gap-3">
+                    <div class="bg-light text-info rounded-circle p-3 shadow-inner">
+                        <i class="fas fa-stopwatch fa-xl"></i>
+                    </div>
+                    <div>
+                        <div class="fw-bold text-dark">Fast Switch</div>
+                        <div class="small text-muted">In 5 Minutes</div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <section class="section container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p>Find the best tariffs for your household needs.</p>
-            </div>
-
-            <div class="grid">
-                <article class="card">
-                    <i class="fas fa-bolt card-icon"></i>
-                    <h3>Electricity</h3>
-                    <p>Compare electricity providers and switch to a cheaper tariff instantly. Save money regarding
-                        rising energy costs.</p>
-                    <a href="services.html#electricity" class="card-link">Compare Electricity <i
-                            class="fas fa-arrow-right"></i></a>
-                </article>
-
-                <article class="card">
-                    <i class="fas fa-burn card-icon"></i>
-                    <h3>Gas</h3>
-                    <p>Find the best gas rates in your area. We help you navigate through complex tariffs to find
-                        transparent deals.</p>
-                    <a href="services.html#gas" class="card-link">Compare Gas <i class="fas fa-arrow-right"></i></a>
-                </article>
-
-                <article class="card">
-                    <i class="fas fa-shield-alt card-icon"></i>
-                    <h3>Insurance</h3>
-                    <p>From liability to car insurance, find policies that offer the best protection at the lowest
-                        price.</p>
-                    <a href="services.html#insurance" class="card-link">Compare Insurance <i
-                            class="fas fa-arrow-right"></i></a>
-                </article>
-
-                <article class="card">
-                    <i class="fas fa-mobile-alt card-icon"></i>
-                    <h3>DSL & Mobile</h3>
-                    <p>High-speed internet and mobile plans tailored to your usage. Don't pay for data you don't use.
-                    </p>
-                    <a href="services.html#dsl" class="card-link">Compare DSL & Mobile <i
-                            class="fas fa-arrow-right"></i></a>
-                </article>
+        <!-- How it Works -->
+        <section class="section py-5 my-5">
+            <div class="container text-center">
+                <div class="section-title mb-5" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-3">How Nevo24 Works</h2>
+                    <p class="text-muted lead mx-auto" style="max-width: 600px;">Three simple steps to optimize your
+                        contracts and start saving immediately.</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-white p-5 rounded-4 shadow-sm border h-100 transition shadow-hover">
+                            <div class="bg-primary text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-4"
+                                style="width: 80px; height: 80px; font-size: 2rem; font-weight: 800;">1</div>
+                            <h3 class="fw-bold h4 mb-3">Send Documents</h3>
+                            <p class="text-muted mb-0">Simply upload your current contract PDFs or photos via our secure
+                                form. It takes less than 2 minutes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-white p-5 rounded-4 shadow-sm border h-100 transition shadow-hover">
+                            <div class="bg-primary text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-4"
+                                style="width: 80px; height: 80px; font-size: 2rem; font-weight: 800;">2</div>
+                            <h3 class="fw-bold h4 mb-3">We Analyze</h3>
+                            <p class="text-muted mb-0">Our experts check your tariffs for savings potential and better
+                                conditions compared to the current market.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-white p-5 rounded-4 shadow-sm border h-100 transition shadow-hover">
+                            <div class="bg-primary text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-4"
+                                style="width: 80px; height: 80px; font-size: 2rem; font-weight: 800;">3</div>
+                            <h3 class="fw-bold h4 mb-3">You Save</h3>
+                            <p class="text-muted mb-0">We switch you to the best provider automatically. You sit back
+                                and enjoy the savings year after year.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section container" style="background-color: #eef1f5; border-radius: 12px; padding: 3rem;">
-            <div class="section-title">
-                <h2>Why Choose Nevo24?</h2>
-            </div>
-            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
-                <div>
-                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Personalized Consulting</h3>
-                    <p style="margin-bottom: 1.5rem;">Unlike other comparison sites, we offer direct personal support.
-                        Our experts review your contracts and suggest the best optimizations specifically for your
-                        situation.</p>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--accent-hover); margin-right: 0.5rem;"></i> Dedicated support agent
-                        </li>
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--accent-hover); margin-right: 0.5rem;"></i> Annual contract review
-                        </li>
-                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                style="color: var(--accent-hover); margin-right: 0.5rem;"></i> Automatic switching
-                            service</li>
-                    </ul>
-                    <a href="contact.html" class="btn-cta" style="margin-top: 2rem;">Contact an Expert</a>
+        <!-- App Teaser -->
+        <section class="container mb-5 pb-5">
+            <div class="bg-primary p-5 p-lg-5 rounded-5 text-white shadow-xl position-relative overflow-hidden"
+                data-aos="zoom-in">
+                <div class="row align-items-center g-5 position-relative z-2">
+                    <div class="col-lg-7">
+                        <span class="badge bg-white text-primary rounded-pill mb-4 px-3 py-2 fw-bold shadow-sm">COMING
+                            SOON</span>
+                        <h2 class="display-4 fw-bold mb-4">Manage Everything in One App</h2>
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-12 d-flex align-items-start gap-3">
+                                <div class="bg-white bg-opacity-10 rounded-circle p-2 text-white">
+                                    <i class="fas fa-camera fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Document Scanner</h5>
+                                    <p class="mb-0 opacity-75 small">Scan contracts and policies in seconds with your
+                                        smartphone camera.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-items-start gap-3">
+                                <div class="bg-white bg-opacity-10 rounded-circle p-2 text-white">
+                                    <i class="fas fa-comments fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Smart Advisor Chat</h5>
+                                    <p class="mb-0 opacity-75 small">Talk directly to your personal contract advisor
+                                        anytime, anywhere.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-items-start gap-3">
+                                <div class="bg-white bg-opacity-10 rounded-circle p-2 text-white">
+                                    <i class="fas fa-bell fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Auto-Notifications</h5>
+                                    <p class="mb-0 opacity-75 small">Never miss a cancellation deadline. We notify you
+                                        automatically.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 opacity-50 small fs-italic">Nevo24 App is currently in final development phase.
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block text-center">
+                        <div class="mockup-phone shadow-lg mx-auto"
+                            style="width: 260px; height: 520px; border: 8px solid rgba(255,255,255,0.1); border-radius: 40px; background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-mobile-alt display-1 opacity-25"></i>
+                        </div>
+                    </div>
                 </div>
-                <!-- Placeholder for an image -->
-                <div
-                    style="background-color: #ddd; height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #666;">
-                    <i class="fas fa-headset" style="font-size: 5rem; color: var(--primary-color); opacity: 0.5;"></i>
+            </div>
+        </section>
+
+        <section class="py-5 bg-white shadow-sm border-top border-bottom">
+            <div class="container py-5 text-center">
+                <div class="section-title mb-5" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-3">Our Core Services</h2>
+                    <p class="text-muted lead mx-auto" style="max-width: 600px;">Optimizing your household essentials
+                        for maximum savings and better coverage.</p>
+                </div>
+                <div class="row g-4 text-start">
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 border shadow-sm transition shadow-hover rounded-4">
+                            <div class="card-body p-4">
+                                <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center p-3 mb-4"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fas fa-bolt fa-2xl"></i>
+                                </div>
+                                <h3 class="fw-bold h5 mb-3">Electricity</h3>
+                                <p class="text-muted small mb-4">Compare providers and switch to cheaper tariffs.
+                                    Protect yourself from rising energy costs.</p>
+                                <a href="services.html#electricity"
+                                    class="text-primary fw-bold text-decoration-none small stretched-link">Compare Now
+                                    <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 border shadow-sm transition shadow-hover rounded-4">
+                            <div class="card-body p-4">
+                                <div class="bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center p-3 mb-4"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fas fa-burn fa-2xl"></i>
+                                </div>
+                                <h3 class="fw-bold h5 mb-3">Gas</h3>
+                                <p class="text-muted small mb-4">Find top gas rates and navigate complex tariffs with
+                                    our expert transparent comparisons.</p>
+                                <a href="services.html#gas"
+                                    class="text-primary fw-bold text-decoration-none small stretched-link">Check Rates
+                                    <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 border shadow-sm transition shadow-hover rounded-4">
+                            <div class="card-body p-4">
+                                <div class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center p-3 mb-4"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fas fa-shield-alt fa-2xl"></i>
+                                </div>
+                                <h3 class="fw-bold h5 mb-3">Insurance</h3>
+                                <p class="text-muted small mb-4">Best protection at the lowest price for liability, car
+                                    insurance, household and more.</p>
+                                <a href="services.html#insurance"
+                                    class="text-primary fw-bold text-decoration-none small stretched-link">Get Protected
+                                    <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card h-100 border shadow-sm transition shadow-hover rounded-4">
+                            <div class="card-body p-4">
+                                <div class="bg-info bg-opacity-10 text-info rounded-circle d-flex align-items-center justify-content-center p-3 mb-4"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fas fa-mobile-alt fa-2xl"></i>
+                                </div>
+                                <h3 class="fw-bold h5 mb-3">DSL & Mobile</h3>
+                                <p class="text-muted small mb-4">High-speed internet and mobile plans tailored to your
+                                    usage. Stop overpaying for data.</p>
+                                <a href="services.html#dsl"
+                                    class="text-primary fw-bold text-decoration-none small stretched-link">View Plans <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="section py-5 my-5">
+            <div class="container py-5 px-5 bg-white border shadow-md rounded-5" data-aos="fade-up">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <h2 class="display-5 fw-bold mb-4">Personal Consulting Is Our DNA</h2>
+                        <p class="lead text-muted mb-5">Unlike generic comparison engines, we assign a personal human
+                            advisor to every client. Our experts review your documents manually to catch details AI
+                            might miss.</p>
+                        <ul class="list-unstyled mb-5">
+                            <li class="d-flex align-items-center gap-3 mb-3">
+                                <div class="bg-success bg-opacity-10 text-success rounded-circle p-2 small"><i
+                                        class="fas fa-check"></i></div>
+                                <span>Dedicated personal support agent</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-3">
+                                <div class="bg-success bg-opacity-10 text-success rounded-circle p-2 small"><i
+                                        class="fas fa-check"></i></div>
+                                <span>Annual automatic contract optimizations</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-3">
+                                <div class="bg-success bg-opacity-10 text-success rounded-circle p-2 small"><i
+                                        class="fas fa-check"></i></div>
+                                <span>Complete claims assistance service</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow-sm">Talk to an
+                            Expert</a>
+                    </div>
+                    <div class="col-lg-5 text-center px-4">
+                        <div class="bg-light p-5 rounded-4 border shadow-sm position-relative">
+                            <i class="fas fa-headset display-1 text-primary opacity-25 mb-3"></i>
+                            <div class="fw-bold text-dark">We are human</div>
+                            <small class="text-muted">Real experts, not just algorithms</small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h4>Nevo24</h4>
-                    <p>Your personal contract manager. We help you save on electricity, gas, insurance, and more.</p>
+    <footer class="bg-white pt-5 mt-5 border-top shadow-sm">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4 text-primary">Nevo24</h4>
+                    <p class="text-muted mb-4" style="max-width: 300px;">Your professional contract managers. Personal
+                        consulting combined with high-tech automation.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-facebook-f p-1"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-linkedin-in p-1"></i></a>
+                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
+                                class="fab fa-instagram p-1"></i></a>
+                    </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#electricity">Electricity</a></li>
-                        <li><a href="services.html#gas">Gas</a></li>
-                        <li><a href="services.html#insurance">Insurance</a></li>
-                        <li><a href="services.html#dsl">DSL & Mobile</a></li>
+                <div class="col-md-4 col-lg-2 ms-lg-auto">
+                    <h5 class="fw-bold mb-4">Services</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="services.html#electricity"
+                                class="text-decoration-none text-muted transition hover-primary">Electricity</a></li>
+                        <li><a href="services.html#gas"
+                                class="text-decoration-none text-muted transition hover-primary">Gas</a></li>
+                        <li><a href="services.html#insurance"
+                                class="text-decoration-none text-muted transition hover-primary">Insurance</a></li>
+                        <li><a href="services.html#dsl"
+                                class="text-decoration-none text-muted transition hover-primary">DSL & Mobile</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">About Us</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="text-decoration-none text-muted transition hover-primary">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Careers</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="knowledge.html">Help Center</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Imprint</a></li>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="fw-bold mb-4">Support</h5>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="knowledge.html"
+                                class="text-decoration-none text-muted transition hover-primary">Help Center</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Terms</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Imprint</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                &copy; 2026 Nevo24. All rights reserved.
-            </div>
+        </div>
+        <div class="bg-light py-4 text-center border-top small text-muted">
+            &copy; 2026 Nevo24. All rights reserved. Professional Energy & Insurance Management.
         </div>
     </footer>
 
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 
