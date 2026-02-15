@@ -24,9 +24,12 @@
 </head>
 
 <body class="bg-light">
-    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
         <div class="container">
-            <a href="index.html" class="navbar-brand logo text-decoration-none">Nevo24</a>
+            <a href="index.html" class="navbar-brand logo d-flex align-items-center gap-2 text-decoration-none">
+                <img src="img/logo.png" alt="Nevo24 Logo" height="32">
+                <span>Nevo24</span>
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarContent" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -37,40 +40,41 @@
                     <a href="services.html" class="nav-link active fw-medium">Services</a>
                     <a href="knowledge.html" class="nav-link fw-medium">Knowledge</a>
                     <a href="contact.html" class="nav-link fw-medium">Contact</a>
-                    <a href="contact.html" class="btn btn-primary px-4 rounded-pill fw-bold ms-lg-2">Get Started</a>
+                    <a href="contact.html" class="btn btn-primary px-4 rounded-pill ms-lg-2">Get Started</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="hero py-5 bg-white border-bottom shadow-sm">
-            <div class="container py-5 text-center" data-aos="fade-down">
-                <h1 class="display-3 fw-bold mb-4 text-primary">Our Services</h1>
-                <p class="lead text-muted mx-auto" style="max-width: 700px;">Comprehensive comparison and consulting for
+        <section class="hero" style="padding: 3rem 0 4rem;">
+            <div class="container py-4 text-center" data-aos="fade-down">
+                <h1 class="display-3 fw-bold mb-3">Our Services</h1>
+                <p class="lead mx-auto" style="max-width: 750px; font-size: 1.1rem; opacity: 0.8;">Comprehensive
+                    comparison and consulting for
                     your essential household contracts. We optimize your Energy and Insurance portfolios to ensure
-                    maximum value and security.</p>
+                    maximum value and security through personal support.</p>
             </div>
         </section>
 
         <!-- Energy Section -->
-        <section class="py-5 my-5">
+        <section style="padding: 4rem 0;">
             <div class="container">
-                <div class="section-title text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-5 fw-bold mb-3">Energy Management</h2>
+                <div class="section-title text-center mb-5 pb-5" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-3">Energy Management</h2>
                     <p class="text-muted lead">Electricity & Gas optimization for private households and commercial
                         clients.</p>
                 </div>
 
-                <div class="row g-4 pt-4">
+                <div class="row g-5">
                     <!-- Electricity Card -->
                     <div class="col-lg-6" data-aos="fade-right">
-                        <div id="electricity"
-                            class="card h-100 border shadow-sm rounded-4 overflow-hidden transition shadow-hover">
+                        <div id="electricity" class="card overflow-hidden shadow-hover">
                             <div class="row g-0 h-100">
-                                <div class="col-md-4 bg-light d-flex align-items-center justify-content-center p-4">
-                                    <div class="bg-white rounded-circle shadow-sm p-4 text-primary">
-                                        <i class="fas fa-bolt display-4"></i>
+                                <div
+                                    class="col-md-4 bg-primary bg-opacity-10 d-flex align-items-center justify-content-center p-4">
+                                    <div class="bg-white rounded-circle p-4 shadow-sm">
+                                        <i class="fas fa-bolt display-4 text-primary"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
@@ -79,19 +83,18 @@
                                         <p class="text-muted small mb-4">We compare hundreds of providers to find the
                                             tariff that suits your consumption perfectly, focusing on both price and
                                             supply security.</p>
-                                        <div class="row g-2 mb-4">
-                                            <div class="col-6 small text-muted"><i
-                                                    class="fas fa-check text-success me-2"></i>Price Monitoring</div>
-                                            <div class="col-6 small text-muted"><i
-                                                    class="fas fa-check text-success me-2"></i>Green Energy</div>
-                                            <div class="col-6 small text-muted"><i
-                                                    class="fas fa-check text-success me-2"></i>Bonus Optimization</div>
-                                            <div class="col-6 small text-muted"><i
-                                                    class="fas fa-check text-success me-2"></i>Switch Service</div>
+                                        <div class="row g-3 mb-5">
+                                            <div class="col-6 small text-muted d-flex align-items-center gap-2"><i
+                                                    class="fas fa-check text-success"></i>Price Monitoring</div>
+                                            <div class="col-6 small text-muted d-flex align-items-center gap-2"><i
+                                                    class="fas fa-check text-success"></i>Green Energy</div>
+                                            <div class="col-6 small text-muted d-flex align-items-center gap-2"><i
+                                                    class="fas fa-check text-success"></i>Bonus Optimization</div>
+                                            <div class="col-6 small text-muted d-flex align-items-center gap-2"><i
+                                                    class="fas fa-check text-success"></i>Switch Service</div>
                                         </div>
                                         <a href="contact.html?service=electricity"
-                                            class="btn btn-outline-primary rounded-pill px-4 fw-bold shadow-sm">Request
-                                            Free Quote</a>
+                                            class="btn btn-cta w-100 rounded-pill shadow-sm">Request Free Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -100,12 +103,12 @@
 
                     <!-- Gas Card -->
                     <div class="col-lg-6" data-aos="fade-left">
-                        <div id="gas"
-                            class="card h-100 border shadow-sm rounded-4 overflow-hidden transition shadow-hover">
+                        <div id="gas" class="card overflow-hidden shadow-hover">
                             <div class="row g-0 h-100">
-                                <div class="col-md-4 bg-light d-flex align-items-center justify-content-center p-4">
-                                    <div class="bg-white rounded-circle shadow-sm p-4 text-danger">
-                                        <i class="fas fa-burn display-4"></i>
+                                <div
+                                    class="col-md-4 bg-danger bg-opacity-10 d-flex align-items-center justify-content-center p-4">
+                                    <div class="bg-white rounded-circle p-4 shadow-sm">
+                                        <i class="fas fa-burn display-4 text-danger"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
@@ -114,19 +117,18 @@
                                         <p class="text-muted small mb-4">Secure a low rate now. We analyze your current
                                             contract and manage the entire switching process without any supply
                                             interruption.</p>
-                                        <div class="row g-2 mb-4">
-                                            <div class="col-6 small text-muted"><i
-                                                    class="fas fa-check text-success me-2"></i>Rate Analysis</div>
-                                            <div class="col-6 small text-muted"><i
-                                                    class="fas fa-check text-success me-2"></i>Supply Security</div>
-                                            <div class="col-6 small text-muted"><i
-                                                    class="fas fa-check text-success me-2"></i>Hassle-free Switch</div>
-                                            <div class="col-6 small text-muted"><i
-                                                    class="fas fa-check text-success me-2"></i>Annual Review</div>
+                                        <div class="row g-3 mb-5">
+                                            <div class="col-6 small text-muted d-flex align-items-center gap-2"><i
+                                                    class="fas fa-check text-success"></i>Rate Analysis</div>
+                                            <div class="col-6 small text-muted d-flex align-items-center gap-2"><i
+                                                    class="fas fa-check text-success"></i>Supply Security</div>
+                                            <div class="col-6 small text-muted d-flex align-items-center gap-2"><i
+                                                    class="fas fa-check text-success"></i>Hassle-free Switch</div>
+                                            <div class="col-6 small text-muted d-flex align-items-center gap-2"><i
+                                                    class="fas fa-check text-success"></i>Annual Review</div>
                                         </div>
                                         <a href="contact.html?service=gas"
-                                            class="btn btn-outline-primary rounded-pill px-4 fw-bold shadow-sm">Check
-                                            Gas Rates</a>
+                                            class="btn btn-cta w-100 rounded-pill shadow-sm">Check Gas Rates</a>
                                     </div>
                                 </div>
                             </div>
@@ -137,51 +139,51 @@
         </section>
 
         <!-- Insurance Section -->
-        <section class="py-5 bg-white shadow-sm border-top border-bottom position-relative overflow-hidden">
+        <section class="bg-white" style="padding: 4rem 0;">
             <div class="container py-5">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6" data-aos="fade-up">
-                        <div class="section-title mb-4">
-                            <h2 class="display-5 fw-bold mb-3">Insurance Protection</h2>
+                        <div class="section-title text-start mb-5">
+                            <h2 class="display-4 fw-bold mb-4">Insurance Protection</h2>
                             <p class="text-muted lead">Personal coverage for every stage of your life. Don't leave your
                                 future to chance.</p>
                         </div>
-                        <p class="text-muted mb-5">Protect what matters most. We offer hands-on comparisons for personal
+                        <p class="text-muted mb-5" style="line-height: 1.8;">Protect what matters most. We offer
+                            hands-on comparisons for personal
                             and commercial insurance. Our advisors help you navigate complex policies to ensure you are
                             neither underinsured nor overpaying.</p>
 
                         <div class="row g-4 mb-5">
                             <div class="col-sm-6">
                                 <ul class="list-unstyled text-muted lh-lg">
-                                    <li><i class="fas fa-check-circle text-success me-2 shadow-sm rounded-circle"></i>
+                                    <li class="mb-3"><i class="fas fa-check-circle text-success me-3"></i>
                                         Private Liability</li>
-                                    <li><i class="fas fa-check-circle text-success me-2 shadow-sm rounded-circle"></i>
+                                    <li class="mb-3"><i class="fas fa-check-circle text-success me-3"></i>
                                         Household & Contents</li>
-                                    <li><i class="fas fa-check-circle text-success me-2 shadow-sm rounded-circle"></i>
+                                    <li class="mb-3"><i class="fas fa-check-circle text-success me-3"></i>
                                         Car Insurance (KFZ)</li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul class="list-unstyled text-muted lh-lg">
-                                    <li><i class="fas fa-check-circle text-success me-2 shadow-sm rounded-circle"></i>
+                                    <li class="mb-3"><i class="fas fa-check-circle text-success me-3"></i>
                                         Legal Protection</li>
-                                    <li><i class="fas fa-check-circle text-success me-2 shadow-sm rounded-circle"></i>
+                                    <li class="mb-3"><i class="fas fa-check-circle text-success me-3"></i>
                                         Life & Occupational</li>
-                                    <li><i class="fas fa-check-circle text-success me-2 shadow-sm rounded-circle"></i>
+                                    <li class="mb-3"><i class="fas fa-check-circle text-success me-3"></i>
                                         Accident Insurance</li>
                                 </ul>
                             </div>
                         </div>
                         <a href="contact.html?service=insurance"
-                            class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow-sm">Talk to an Insurance
-                            Expert</a>
+                            class="btn btn-cta px-5 py-3 rounded-pill shadow-sm">Talk to an Insurance Expert</a>
                     </div>
                     <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-                        <div class="bg-light p-5 rounded-5 border shadow-inner position-relative text-center">
-                            <i class="fas fa-shield-alt display-1 text-success opacity-25 mb-3"></i>
-                            <h4 class="fw-bold">Your Safety Net</h4>
-                            <p class="small text-muted mb-0">Custom-tailored portfolios for your unique risk profile.
-                            </p>
+                        <div
+                            class="bg-light p-5 rounded-5 border border-white shadow-inner position-relative text-center">
+                            <i class="fas fa-shield-alt display-1 text-success opacity-10 mb-5"></i>
+                            <h4 class="fw-bold mb-3">Your Safety Net</h4>
+                            <p class="text-muted mb-0">Custom-tailored portfolios for your unique risk profile.</p>
                         </div>
                     </div>
                 </div>
@@ -189,22 +191,24 @@
         </section>
 
         <!-- DSL Section -->
-        <section class="py-5 my-5">
-            <div class="container px-5 py-5 bg-primary rounded-5 text-white shadow-xl" data-aos="zoom-in">
+        <section style="padding: 4rem 0;">
+            <div class="container px-5 py-5 bg-primary rounded-5 text-white shadow-xl" data-aos="zoom-in"
+                style="padding: 6rem !important;">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-8">
-                        <h2 class="display-5 fw-bold mb-4">DSL & Mobile Connectivity</h2>
-                        <p class="lead mb-5 opacity-75">Stay connected with high-speed fiber, DSL, and flexible mobile
+                        <h2 class="display-4 fw-bold mb-4">DSL & Mobile Connectivity</h2>
+                        <p class="lead mb-5 opacity-70" style="line-height: 1.8;">Stay connected with high-speed fiber,
+                            DSL, and flexible mobile
                             plans. We find the best network coverage for your specific location at the guaranteed lowest
                             market price.</p>
                         <a href="contact.html?service=dsl"
-                            class="btn btn-white btn-lg px-5 py-3 rounded-pill fw-bold text-primary shadow-sm">Compare
+                            class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-bold text-primary shadow-sm border-0">Compare
                             Network Plans</a>
                     </div>
                     <div class="col-lg-4 text-center">
                         <div
-                            class="bg-white bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center p-5 border border-white border-opacity-25 shadow">
-                            <i class="fas fa-wifi display-1"></i>
+                            class="bg-white bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center p-5 border border-white border-opacity-10 shadow">
+                            <i class="fas fa-wifi display-1 opacity-50"></i>
                         </div>
                     </div>
                 </div>
@@ -212,62 +216,51 @@
         </section>
     </main>
 
-    <footer class="bg-white pt-5 mt-5 border-top shadow-sm">
-        <div class="container pb-5">
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <h4 class="fw-bold mb-4 text-primary">Nevo24</h4>
-                    <p class="text-muted mb-4" style="max-width: 300px;">Your professional contract managers. Personal
-                        consulting combined with high-tech automation.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 class="logo text-white mb-4">Nevo24</h4>
+                    <p class="mb-4">Your professional contract managers. Personal consulting combined with high-tech
+                        automation for maximum savings.</p>
                     <div class="d-flex gap-3">
-                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
-                                class="fab fa-facebook-f p-1"></i></a>
-                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
-                                class="fab fa-linkedin-in p-1"></i></a>
-                        <a href="#" class="btn btn-light rounded-circle p-2 text-primary shadow-sm"><i
-                                class="fab fa-instagram p-1"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2 ms-lg-auto">
-                    <h5 class="fw-bold mb-4">Services</h5>
-                    <ul class="list-unstyled text-muted small lh-lg">
-                        <li><a href="services.html#electricity"
-                                class="text-decoration-none text-muted transition hover-primary">Electricity</a></li>
-                        <li><a href="services.html#gas"
-                                class="text-decoration-none text-muted transition hover-primary">Gas</a></li>
-                        <li><a href="services.html#insurance"
-                                class="text-decoration-none text-muted transition hover-primary">Insurance</a></li>
-                        <li><a href="services.html#dsl"
-                                class="text-decoration-none text-muted transition hover-primary">DSL & Mobile</a></li>
+                <div class="footer-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="services.html#electricity">Electricity</a></li>
+                        <li><a href="services.html#gas">Gas</a></li>
+                        <li><a href="services.html#insurance">Insurance</a></li>
+                        <li><a href="services.html#dsl">DSL & Mobile</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <h5 class="fw-bold mb-4">Company</h5>
-                    <ul class="list-unstyled text-muted small lh-lg">
-                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">About Us</a>
-                        </li>
-                        <li><a href="contact.html"
-                                class="text-decoration-none text-muted transition hover-primary">Contact</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Careers</a>
-                        </li>
-                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Privacy
-                                Policy</a></li>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <h5 class="fw-bold mb-4">Support</h5>
-                    <ul class="list-unstyled text-muted small lh-lg">
-                        <li><a href="knowledge.html"
-                                class="text-decoration-none text-muted transition hover-primary">Help Center</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Terms</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted transition hover-primary">Imprint</a>
-                        </li>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="knowledge.html">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Imprint</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="bg-light py-4 text-center border-top small text-muted">
-            &copy; 2026 Nevo24. All rights reserved. Professional Energy & Insurance Management.
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; 2026 Nevo24. All rights reserved. Professional Energy & Insurance Management.
+            </div>
         </div>
     </footer>
 

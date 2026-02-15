@@ -1,16 +1,29 @@
 .btn-cta {
     display: inline-block;
     background-color: var(--accent-color);
-    color: var(--text-dark);
-    padding: 1rem 2rem;
+    color: var(--white);
+    padding: 0.875rem 2.25rem;
     border-radius: var(--radius-md);
-    font-weight: 700;
-    font-size: 1.1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    border: none;
 }
 
 .btn-cta:hover {
     background-color: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1.5px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-outline:hover {
+    background: var(--accent-color);
+    color: var(--white);
 }
